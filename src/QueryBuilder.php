@@ -723,7 +723,6 @@ class QueryBuilder extends Builder
 
         $waFirst = $this->query->getGrammar()->wrapTable($firstAlias);
         $waSecond = $this->query->getGrammar()->wrapTable($secondAlias);
-        $pk = $this->model->getKeyName();
 
         $query = $this->model
             ->newNestedSetQuery($firstAlias)
